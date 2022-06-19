@@ -3,7 +3,7 @@ import re as regex
 from tkinter import E
 import fitz  # this is pymupdf
 import pandas as pd
-with fitz.open("424008-1-22.pdf") as doc:
+with fitz.open("424009-1-22.pdf") as doc:
     text = ""
     for page in doc:
         text += page.get_text()
@@ -50,5 +50,5 @@ df = pd.DataFrame(data)
 print(df)
 print(empreendimentolimpo2)
 print(empreendimentosujo)
-##df.to_excel (r'C:\Users\T-Gamer\OneDrive - Fundação São Paulo\Documentos\Python\export_dataframe.xlsx', header=True)
+df.to_excel (r'C:\Users\T-Gamer\OneDrive - Fundação São Paulo\Documentos\excel\ ', header=True)
 
